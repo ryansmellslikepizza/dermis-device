@@ -1,0 +1,7 @@
+{
+  "device_mode": "dev",
+  "wifi_check_host": "8.8.8.8",
+  "wifi_check_timeout_sec": 3,
+  "wifi_connect_timeout_sec": 30,
+  "ble_advertise_timeout_sec": 900
+}

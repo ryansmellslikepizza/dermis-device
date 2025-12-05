@@ -1,0 +1,15 @@
+[Unit]
+Description=Dermis Mirror Core App
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# 👇 Update path
+ExecStart=/usr/bin/python3 /home/pi/dermis-device/mirror_app.py
+Restart=always
+RestartSec=2
+WorkingDirectory=/home/pi/dermis-device
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+[Unit]
+Description=Dermis BLE Provisioning Service
+After=bluetooth.service
+Wants=bluetooth.service
+
+[Service]
+Type=simple
+# 👇 Update path
+ExecStart=/usr/bin/python3 /home/pi/dermis-device/ble_provisioning.py
+Restart=always
+RestartSec=2
+WorkingDirectory=/home/pi/dermis-device
+
+[Install]
+WantedBy=multi-user.target

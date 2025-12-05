@@ -1,0 +1,17 @@
+[Unit]
+Description=Dermis Boot Supervisor
+After=network-pre.target bluetooth.service
+Wants=bluetooth.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/dermis-device/supervisor.py
+Restart=on-failure
+RestartSec=2
+# Optional: where to run from
+WorkingDirectory=/home/pi/dermis-device
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

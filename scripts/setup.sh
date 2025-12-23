@@ -1,0 +1,1 @@
+sudo apt install imx500-all

@@ -1,6 +1,6 @@
 # Dermis Device Firmware (V1 Skeleton)
 
-This repository contains the firmware for the Dermis Smart Beauty Mirror (V1).
+This repository contains the firmware for Esther (V1).
 
 ## Components
 
